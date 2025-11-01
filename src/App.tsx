@@ -93,51 +93,51 @@ function App() {
   const mockGames: Game[] = [
     // NBA Games
     { id: 'mock-1', sport: 'NBA', homeTeam: 'Los Angeles Lakers', awayTeam: 'Golden State Warriors', homeOdds: 1.85, awayOdds: 1.95, time: '20:00', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaBasketballBall /> },
-    { id: 'mock-2', sport: 'NBA', homeTeam: 'Boston Celtics', awayTeam: 'Miami Heat', homeOdds: 1.95, awayOdds: 1.85, time: '19:30', status: 'live', icon: <FaBasketballBall /> },
-    { id: 'mock-3', sport: 'NBA', homeTeam: 'Milwaukee Bucks', awayTeam: 'Brooklyn Nets', homeOdds: 1.75, awayOdds: 2.05, time: '21:00', status: 'upcoming', icon: <FaBasketballBall /> },
-    { id: 'mock-4', sport: 'NBA', homeTeam: 'Denver Nuggets', awayTeam: 'Phoenix Suns', homeOdds: 1.88, awayOdds: 1.92, time: '22:30', status: 'upcoming', icon: <FaBasketballBall /> },
-    { id: 'mock-5', sport: 'NBA', homeTeam: 'Dallas Mavericks', awayTeam: 'Los Angeles Clippers', homeOdds: 2.10, awayOdds: 1.72, time: '23:00', status: 'upcoming', icon: <FaBasketballBall /> },
-    { id: 'mock-6', sport: 'NBA', homeTeam: 'Chicago Bulls', awayTeam: 'New York Knicks', homeOdds: 1.82, awayOdds: 1.98, time: '19:00', status: 'upcoming', icon: <FaBasketballBall /> },
+    { id: 'mock-2', sport: 'NBA', homeTeam: 'Boston Celtics', awayTeam: 'Miami Heat', homeOdds: 1.95, awayOdds: 1.85, time: '19:30', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaBasketballBall /> },
+    { id: 'mock-3', sport: 'NBA', homeTeam: 'Milwaukee Bucks', awayTeam: 'Brooklyn Nets', homeOdds: 1.75, awayOdds: 2.05, time: '21:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaBasketballBall /> },
+    { id: 'mock-4', sport: 'NBA', homeTeam: 'Denver Nuggets', awayTeam: 'Phoenix Suns', homeOdds: 1.88, awayOdds: 1.92, time: '22:30', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaBasketballBall /> },
+    { id: 'mock-5', sport: 'NBA', homeTeam: 'Dallas Mavericks', awayTeam: 'Los Angeles Clippers', homeOdds: 2.10, awayOdds: 1.72, time: '23:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaBasketballBall /> },
+    { id: 'mock-6', sport: 'NBA', homeTeam: 'Chicago Bulls', awayTeam: 'New York Knicks', homeOdds: 1.82, awayOdds: 1.98, time: '19:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaBasketballBall /> },
     
     // NFL Games
-    { id: 'mock-7', sport: 'NFL', homeTeam: 'Kansas City Chiefs', awayTeam: 'Buffalo Bills', homeOdds: 2.10, awayOdds: 1.75, time: '17:00', status: 'upcoming', icon: <FaFootballBall /> },
-    { id: 'mock-8', sport: 'NFL', homeTeam: 'Dallas Cowboys', awayTeam: 'Philadelphia Eagles', homeOdds: 2.20, awayOdds: 1.65, time: '20:00', status: 'live', icon: <FaFootballBall /> },
-    { id: 'mock-9', sport: 'NFL', homeTeam: 'San Francisco 49ers', awayTeam: 'Seattle Seahawks', homeOdds: 1.68, awayOdds: 2.22, time: '21:15', status: 'upcoming', icon: <FaFootballBall /> },
-    { id: 'mock-10', sport: 'NFL', homeTeam: 'Miami Dolphins', awayTeam: 'New York Jets', homeOdds: 1.55, awayOdds: 2.40, time: '18:30', status: 'upcoming', icon: <FaFootballBall /> },
-    { id: 'mock-11', sport: 'NFL', homeTeam: 'Cincinnati Bengals', awayTeam: 'Baltimore Ravens', homeOdds: 1.90, awayOdds: 1.90, time: '20:45', status: 'live', icon: <FaFootballBall /> },
-    { id: 'mock-12', sport: 'NFL', homeTeam: 'Green Bay Packers', awayTeam: 'Minnesota Vikings', homeOdds: 1.78, awayOdds: 2.05, time: '19:00', status: 'upcoming', icon: <FaFootballBall /> },
+    { id: 'mock-7', sport: 'NFL', homeTeam: 'Kansas City Chiefs', awayTeam: 'Buffalo Bills', homeOdds: 2.10, awayOdds: 1.75, time: '17:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFootballBall /> },
+    { id: 'mock-8', sport: 'NFL', homeTeam: 'Dallas Cowboys', awayTeam: 'Philadelphia Eagles', homeOdds: 2.20, awayOdds: 1.65, time: '20:00', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaFootballBall /> },
+    { id: 'mock-9', sport: 'NFL', homeTeam: 'San Francisco 49ers', awayTeam: 'Seattle Seahawks', homeOdds: 1.68, awayOdds: 2.22, time: '21:15', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFootballBall /> },
+    { id: 'mock-10', sport: 'NFL', homeTeam: 'Miami Dolphins', awayTeam: 'New York Jets', homeOdds: 1.55, awayOdds: 2.40, time: '18:30', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFootballBall /> },
+    { id: 'mock-11', sport: 'NFL', homeTeam: 'Cincinnati Bengals', awayTeam: 'Baltimore Ravens', homeOdds: 1.90, awayOdds: 1.90, time: '20:45', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaFootballBall /> },
+    { id: 'mock-12', sport: 'NFL', homeTeam: 'Green Bay Packers', awayTeam: 'Minnesota Vikings', homeOdds: 1.78, awayOdds: 2.05, time: '19:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFootballBall /> },
     
     // MLB Games
-    { id: 'mock-13', sport: 'MLB', homeTeam: 'New York Yankees', awayTeam: 'Boston Red Sox', homeOdds: 1.90, awayOdds: 1.90, time: '19:10', status: 'live', icon: <FaBaseballBall /> },
-    { id: 'mock-14', sport: 'MLB', homeTeam: 'Los Angeles Dodgers', awayTeam: 'San Francisco Giants', homeOdds: 1.72, awayOdds: 2.10, time: '22:10', status: 'upcoming', icon: <FaBaseballBall /> },
-    { id: 'mock-15', sport: 'MLB', homeTeam: 'Houston Astros', awayTeam: 'Texas Rangers', homeOdds: 1.85, awayOdds: 1.95, time: '20:05', status: 'upcoming', icon: <FaBaseballBall /> },
-    { id: 'mock-16', sport: 'MLB', homeTeam: 'Atlanta Braves', awayTeam: 'New York Mets', homeOdds: 1.80, awayOdds: 2.00, time: '19:20', status: 'live', icon: <FaBaseballBall /> },
-    { id: 'mock-17', sport: 'MLB', homeTeam: 'Chicago Cubs', awayTeam: 'St. Louis Cardinals', homeOdds: 2.05, awayOdds: 1.77, time: '20:40', status: 'upcoming', icon: <FaBaseballBall /> },
+    { id: 'mock-13', sport: 'MLB', homeTeam: 'New York Yankees', awayTeam: 'Boston Red Sox', homeOdds: 1.90, awayOdds: 1.90, time: '19:10', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaBaseballBall /> },
+    { id: 'mock-14', sport: 'MLB', homeTeam: 'Los Angeles Dodgers', awayTeam: 'San Francisco Giants', homeOdds: 1.72, awayOdds: 2.10, time: '22:10', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaBaseballBall /> },
+    { id: 'mock-15', sport: 'MLB', homeTeam: 'Houston Astros', awayTeam: 'Texas Rangers', homeOdds: 1.85, awayOdds: 1.95, time: '20:05', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaBaseballBall /> },
+    { id: 'mock-16', sport: 'MLB', homeTeam: 'Atlanta Braves', awayTeam: 'New York Mets', homeOdds: 1.80, awayOdds: 2.00, time: '19:20', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaBaseballBall /> },
+    { id: 'mock-17', sport: 'MLB', homeTeam: 'Chicago Cubs', awayTeam: 'St. Louis Cardinals', homeOdds: 2.05, awayOdds: 1.77, time: '20:40', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaBaseballBall /> },
     
     // NHL Games
-    { id: 'mock-18', sport: 'NHL', homeTeam: 'Toronto Maple Leafs', awayTeam: 'Montreal Canadiens', homeOdds: 1.70, awayOdds: 2.15, time: '19:00', status: 'upcoming', icon: <FaHockeyPuck /> },
-    { id: 'mock-19', sport: 'NHL', homeTeam: 'Boston Bruins', awayTeam: 'New York Rangers', homeOdds: 1.88, awayOdds: 1.92, time: '20:00', status: 'live', icon: <FaHockeyPuck /> },
-    { id: 'mock-20', sport: 'NHL', homeTeam: 'Edmonton Oilers', awayTeam: 'Calgary Flames', homeOdds: 1.95, awayOdds: 1.85, time: '22:00', status: 'upcoming', icon: <FaHockeyPuck /> },
-    { id: 'mock-21', sport: 'NHL', homeTeam: 'Tampa Bay Lightning', awayTeam: 'Florida Panthers', homeOdds: 1.82, awayOdds: 1.98, time: '19:30', status: 'upcoming', icon: <FaHockeyPuck /> },
-    { id: 'mock-22', sport: 'NHL', homeTeam: 'Vegas Golden Knights', awayTeam: 'Colorado Avalanche', homeOdds: 2.10, awayOdds: 1.75, time: '22:30', status: 'live', icon: <FaHockeyPuck /> },
+    { id: 'mock-18', sport: 'NHL', homeTeam: 'Toronto Maple Leafs', awayTeam: 'Montreal Canadiens', homeOdds: 1.70, awayOdds: 2.15, time: '19:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaHockeyPuck /> },
+    { id: 'mock-19', sport: 'NHL', homeTeam: 'Boston Bruins', awayTeam: 'New York Rangers', homeOdds: 1.88, awayOdds: 1.92, time: '20:00', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaHockeyPuck /> },
+    { id: 'mock-20', sport: 'NHL', homeTeam: 'Edmonton Oilers', awayTeam: 'Calgary Flames', homeOdds: 1.95, awayOdds: 1.85, time: '22:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaHockeyPuck /> },
+    { id: 'mock-21', sport: 'NHL', homeTeam: 'Tampa Bay Lightning', awayTeam: 'Florida Panthers', homeOdds: 1.82, awayOdds: 1.98, time: '19:30', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaHockeyPuck /> },
+    { id: 'mock-22', sport: 'NHL', homeTeam: 'Vegas Golden Knights', awayTeam: 'Colorado Avalanche', homeOdds: 2.10, awayOdds: 1.75, time: '22:30', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaHockeyPuck /> },
     
     // Soccer Games
-    { id: 'mock-23', sport: 'Soccer', homeTeam: 'Manchester City', awayTeam: 'Liverpool', homeOdds: 1.85, awayOdds: 3.50, drawOdds: 3.40, time: '15:00', status: 'upcoming', icon: <FaFutbol /> },
-    { id: 'mock-24', sport: 'Soccer', homeTeam: 'Real Madrid', awayTeam: 'Barcelona', homeOdds: 2.20, awayOdds: 2.80, drawOdds: 3.20, time: '16:30', status: 'live', icon: <FaFutbol /> },
-    { id: 'mock-25', sport: 'Soccer', homeTeam: 'Bayern Munich', awayTeam: 'Borussia Dortmund', homeOdds: 1.65, awayOdds: 4.50, drawOdds: 3.80, time: '14:30', status: 'upcoming', icon: <FaFutbol /> },
-    { id: 'mock-26', sport: 'Soccer', homeTeam: 'Paris Saint-Germain', awayTeam: 'Marseille', homeOdds: 1.55, awayOdds: 5.00, drawOdds: 4.00, time: '20:00', status: 'upcoming', icon: <FaFutbol /> },
-    { id: 'mock-27', sport: 'Soccer', homeTeam: 'Chelsea', awayTeam: 'Arsenal', homeOdds: 2.10, awayOdds: 2.90, drawOdds: 3.30, time: '17:00', status: 'live', icon: <FaFutbol /> },
-    { id: 'mock-28', sport: 'Soccer', homeTeam: 'Inter Milan', awayTeam: 'AC Milan', homeOdds: 2.40, awayOdds: 2.60, drawOdds: 3.10, time: '19:45', status: 'upcoming', icon: <FaFutbol /> },
+    { id: 'mock-23', sport: 'Soccer', homeTeam: 'Manchester City', awayTeam: 'Liverpool', homeOdds: 1.85, awayOdds: 3.50, drawOdds: 3.40, time: '15:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFutbol /> },
+    { id: 'mock-24', sport: 'Soccer', homeTeam: 'Real Madrid', awayTeam: 'Barcelona', homeOdds: 2.20, awayOdds: 2.80, drawOdds: 3.20, time: '16:30', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaFutbol /> },
+    { id: 'mock-25', sport: 'Soccer', homeTeam: 'Bayern Munich', awayTeam: 'Borussia Dortmund', homeOdds: 1.65, awayOdds: 4.50, drawOdds: 3.80, time: '14:30', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFutbol /> },
+    { id: 'mock-26', sport: 'Soccer', homeTeam: 'Paris Saint-Germain', awayTeam: 'Marseille', homeOdds: 1.55, awayOdds: 5.00, drawOdds: 4.00, time: '20:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFutbol /> },
+    { id: 'mock-27', sport: 'Soccer', homeTeam: 'Chelsea', awayTeam: 'Arsenal', homeOdds: 2.10, awayOdds: 2.90, drawOdds: 3.30, time: '17:00', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <FaFutbol /> },
+    { id: 'mock-28', sport: 'Soccer', homeTeam: 'Inter Milan', awayTeam: 'AC Milan', homeOdds: 2.40, awayOdds: 2.60, drawOdds: 3.10, time: '19:45', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <FaFutbol /> },
     
     // Tennis Games
-    { id: 'mock-29', sport: 'Tennis', homeTeam: 'Novak Djokovic', awayTeam: 'Carlos Alcaraz', homeOdds: 1.75, awayOdds: 2.05, time: '14:00', status: 'upcoming', icon: <GiTennisRacket /> },
-    { id: 'mock-30', sport: 'Tennis', homeTeam: 'Rafael Nadal', awayTeam: 'Jannik Sinner', homeOdds: 1.88, awayOdds: 1.92, time: '16:00', status: 'live', icon: <GiTennisRacket /> },
-    { id: 'mock-31', sport: 'Tennis', homeTeam: 'Daniil Medvedev', awayTeam: 'Stefanos Tsitsipas', homeOdds: 2.00, awayOdds: 1.80, time: '15:30', status: 'upcoming', icon: <GiTennisRacket /> },
+    { id: 'mock-29', sport: 'Tennis', homeTeam: 'Novak Djokovic', awayTeam: 'Carlos Alcaraz', homeOdds: 1.75, awayOdds: 2.05, time: '14:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <GiTennisRacket /> },
+    { id: 'mock-30', sport: 'Tennis', homeTeam: 'Rafael Nadal', awayTeam: 'Jannik Sinner', homeOdds: 1.88, awayOdds: 1.92, time: '16:00', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <GiTennisRacket /> },
+    { id: 'mock-31', sport: 'Tennis', homeTeam: 'Daniil Medvedev', awayTeam: 'Stefanos Tsitsipas', homeOdds: 2.00, awayOdds: 1.80, time: '15:30', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <GiTennisRacket /> },
     
     // MMA/UFC Games
-    { id: 'mock-32', sport: 'MMA', homeTeam: 'Jon Jones', awayTeam: 'Stipe Miocic', homeOdds: 1.60, awayOdds: 2.40, time: '23:00', status: 'upcoming', icon: <GiBoxingGlove /> },
-    { id: 'mock-33', sport: 'MMA', homeTeam: 'Islam Makhachev', awayTeam: 'Alexander Volkanovski', homeOdds: 1.70, awayOdds: 2.10, time: '22:30', status: 'upcoming', icon: <GiBoxingGlove /> },
-    { id: 'mock-34', sport: 'MMA', homeTeam: 'Leon Edwards', awayTeam: 'Colby Covington', homeOdds: 1.85, awayOdds: 1.95, time: '23:30', status: 'live', icon: <GiBoxingGlove /> },
+    { id: 'mock-32', sport: 'MMA', homeTeam: 'Jon Jones', awayTeam: 'Stipe Miocic', homeOdds: 1.60, awayOdds: 2.40, time: '23:00', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <GiBoxingGlove /> },
+    { id: 'mock-33', sport: 'MMA', homeTeam: 'Islam Makhachev', awayTeam: 'Alexander Volkanovski', homeOdds: 1.70, awayOdds: 2.10, time: '22:30', date: 'Today', status: 'upcoming', commenceTime: new Date().toISOString(), icon: <GiBoxingGlove /> },
+    { id: 'mock-34', sport: 'MMA', homeTeam: 'Leon Edwards', awayTeam: 'Colby Covington', homeOdds: 1.85, awayOdds: 1.95, time: '23:30', date: 'Today', status: 'live', commenceTime: new Date().toISOString(), icon: <GiBoxingGlove /> },
   ]
 
   const filteredGames = selectedSport === 'All' 
